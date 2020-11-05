@@ -1,0 +1,96 @@
+#rutinas-poderosas-trigger {
+  display: none;
+}
+
+#rutinas-popup {
+  width: 95%;
+}
+
+#rutinas-popup .form-section {
+    margin-bottom: 10px;
+}
+
+#rutinas-popup input[type="text"],
+#rutinas-popup input[type="email"],
+#rutinas-popup input[type="tel"],
+#rutinas-popup input[type="url"]
+#rutinas-popup input[type="date"],
+#rutinas-popup textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#rutinas-popup input[type="text"]:hover,
+#rutinas-popup input[type="email"]:hover,
+#rutinas-popup input[type="tel"]:hover,
+#rutinas-popup input[type="url"]:hover
+#rutinas-popup input[type="date"]:hover,
+#rutinas-popup textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#rutinas-popup input:focus,
+#rutinas-popup textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+#rutinas-popup ::-webkit-input-placeholder {
+  color: #888;
+}
+
+#rutinas-popup :-moz-placeholder {
+  color: #888;
+}
+
+#rutinas-popup ::-moz-placeholder {
+  color: #888;
+}
+
+#rutinas-popup :-ms-input-placeholder {
+  color: #888;
+}
+
+#rutinas-popup button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #00A499;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#rutinas-popup .iti {
+  display: block;
+}
+#rutinas-popup .iti .phoneNumber {
+  padding-left: 52px !important;
+}
+.iti--container {
+  z-index: 99999;
+}
+
+#rutinas-popup button[type="submit"]:hover {
+  background: #00837a;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#rutinas-popup button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1024px) {
+  #rutinas-popup {
+    max-width: 650px;
+  }
+}

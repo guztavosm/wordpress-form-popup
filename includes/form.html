@@ -1,0 +1,33 @@
+<a
+  id="rutinas-poderosas-trigger"
+  data-src="#rutinas-popup"
+  href="javascript:;"
+></a>
+<form id="rutinas-popup" style="display: none" method="POST">
+  <h3>Rutinas poderosas para lucir como siempre has querido</h3>
+  <p>
+    En este e-book encontraras los mejores pasos de una rutina diaria para
+    iniciar un estilo de vida saludable. Son comportamientos que al integrarlos
+    en tu día a día te ayudarán a cuidar tu interior, sintiéndote con más
+    energía, ligera, descansando de una manera reparadora que harán lucir tu
+    exterior con más vitalidad y proyectar todo lo que eres.
+  </p>
+  <div class="form-section">
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" name="nombre" required />
+  </div>
+  <div class="form-section">
+    <label for="telefono">Telefono</label>
+    <input type="text" name="telefono" placeholder="Telefono" class="phoneNumber" required />
+  </div>
+  <div class="form-section">
+    <label for="fecha_nacimiento">Fecha de nacimiento</label>
+    <input type="text" class="datepicker" name="fecha_nacimiento" required />
+  </div>
+  <div class="form-section">
+    <label for="correo">Correo Electronico</label>
+    <input type="email" name="correo" placeholder="Correo Electronico" required />
+  </div>
+  {{nonce}}
+  <button type="submit" id="obtener">Obtener e-book</button>
+</form>
