@@ -38,6 +38,7 @@ function RPP_add_plugin_settings_page()
                     'post_type' => 'page',
                 )
             )),
+            Field::make('rich_text', 'rpp_popup_content', __('Cuerpo del Popup')),
             Field::make('text', 'rpp_email_receiver', __('Correo electronico de destino de los resultados'))->set_default_value(get_option('admin_email')),
             Field::make('text', 'rpp_email_subject', __('Asunto del email')),
             Field::make('image', 'rpp_email_image', __('Imagen de encabezado del E-mail'))->set_value_type('url'),
@@ -138,7 +139,9 @@ function rutinas_popup_form()
     $form_html = file_get_contents(__DIR__ . '/includes/form.html');
     // Wordpress substitution
     $nonce = wp_nonce_field('rutinas_popup', 'nonce', true, false);
+    $popup_body = carbon_get_theme_option('rpp_popup_content');
     $form_html = str_replace("{{nonce}}", $nonce, $form_html);
+    $form_html = str_replace("{{content}}", $popup_body, $form_html);
 
     echo $form_html;
 }
